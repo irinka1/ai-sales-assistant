@@ -1,0 +1,28 @@
+{
+  "name": "@ai-sa/api",
+  "version": "1.0.0",
+  "description": "Fastify API for AI Sales Assistant",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev"
+  },
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@fastify/cors": "^11.3.0",
+    "@prisma/client": "^6.15.0",
+    "dotenv": "^17.4.2",
+    "fastify": "^5.11.2",
+    "openai": "^7.4.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "prisma": "^6.15.0",
+    "tsx": "^4.23.10",
+    "typescript": "^6.0.3"
+  }
+}
